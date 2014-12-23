@@ -1,0 +1,38 @@
+.btn {
+  border-radius: 3px;
+}
+
+.btn--primary {
+  background: $color_light;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 40px;
+  transition: all .3s;
+
+  &:hover {
+    background: darken($color_light, 5%);
+  }
+}
+
+.read-more-btn {
+  text-transform: uppercase;
+  display: block;
+  border: 1px solid #fff;
+  float: left;
+  margin-top: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 700;
+  -webkit-transition: color .3s, border-color .3s;
+  transition: color .3s, border-color .3s;
+
+
+  &:hover {
+    text-decoration: none;
+    color: $color_light;
+    border-color: $color_light;
+  }
+}
+

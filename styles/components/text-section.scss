@@ -1,0 +1,29 @@
+.text-section {
+  background: #f0f0f0;
+  padding: 20px 0;
+}
+
+.text-section__content {
+  position: relative;
+  padding-right: 200px;
+
+  @media (max-width: $mobile) {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.text-section__btn {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  right: 0;
+
+  @media (max-width: $mobile) {
+    display: block;
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}

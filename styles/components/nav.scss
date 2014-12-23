@@ -1,0 +1,30 @@
+.main-nav {
+  float: right;
+  margin-top: 15px;
+
+  @media(max-width: $mobile) {
+    float: none;
+  }
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  a {
+    display: inline-block;
+    color: #6c6c6c;
+
+    &:hover {
+      color: $color_light;
+    }
+  }
+
+  @media(max-width: $mobile) {
+    margin-bottom: 10px;
+  }
+}

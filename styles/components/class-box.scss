@@ -1,0 +1,67 @@
+.class-box-wrap {
+  position: relative;
+  top: 60px;
+  text-align: center;
+  z-index: 100;
+
+  @media(max-width: $mobile) {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+.class-box {
+  background: #24546c;
+  border-radius: 5px;
+  padding: 5px 0;
+
+  img {
+    width: 100%;
+  }
+
+  &:hover {
+    box-shadow: 1px 1px 1px rgba(0,0,0,.7)
+  }
+
+  @media(max-width: $tablet) {
+    text-align: center;
+  }
+}
+
+.class-box__info {
+  margin: 10px;
+  color: #fff;
+}
+
+.class-box__heading {
+  float: left;
+
+  @media(max-width: $tablet) {
+    float: none;
+  }
+
+  @media(max-width: $mobile) {
+    float: left;
+  }
+}
+
+.class-box__social {
+  float: right;
+
+  @media(max-width: $tablet) {
+    float: none;
+  }
+
+  @media(max-width: $mobile) {
+    float: right;
+  }
+}
+
+.class-box__social-item {
+  display: inline-block;
+  margin-left: 5px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}

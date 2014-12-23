@@ -1,0 +1,305 @@
+.highlights-wrap {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+
+    @media(max-width: $desktop) {
+        position: static;
+        padding: 20px 0;
+        background: url(../img/bg/pattern.png) repeat 0 0;
+    }
+}
+
+.highlights-wrap {
+  height: 300px;
+
+  @media(max-width: $desktop) {
+    height: auto;
+  }
+}
+
+.highlights,
+.highlights-wrap .container {
+  height: 100%;
+
+  @media(max-width: $desktop) {
+    height: auto;
+  }
+}
+
+.highlights {
+  top: -50px;
+  position: relative;
+  z-index: 120;
+
+  @media(max-width: $tablet-landscape) {
+    top: 0;
+  }
+}
+
+.highlights-item {
+  border-radius: 5px;
+  padding: 10px;
+  opacity: .95;
+
+  &.event-schedule {
+    padding: 0;
+  }
+
+  @media(max-width: $tablet){
+    text-align: center;
+  }
+
+  @media(max-width: $mobile){
+    text-align: left;
+  }
+}
+
+.highlight-item__header {
+  padding: 10px;
+}
+
+.highlights-item__heading {
+  color: #fff;
+}
+
+.event-item {
+  padding: 0 10px;
+}
+
+.event-item--open {
+  background: $color_light--darker;
+  padding-bottom: 0;
+
+  &.event-item {
+    padding-bottom:0;
+  }
+
+  .event-item__header {
+    border-top: none;
+  }
+
+  .event-item__name:before{
+    content: '\2013';
+    font-size: 26px;
+    vertical-align: middle;
+    top: -4px;
+  }
+
+}
+
+.event-item__header {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.event-item__name {
+  color: #000;
+  float: left;
+
+  &:before {
+      content: '+';
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      display: inline-block;
+      margin-right: 5px;
+      position: relative;
+      vertical-align: middle;
+      top: -1px;
+  }
+}
+
+.event-item__hours {
+  float: right;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.event-number__item {
+  height: 66px;
+  width: 66px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1;
+  position: relative;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.event-number__item-content {
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 25px;
+  display: block;
+  font-family: $heading_font;
+}
+
+.event-item__action-wrap {
+  border-bottom: 1px solid #fff;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+}
+
+.event-item__action-link {
+  color: #fff;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:before {
+    content:'/';
+    font-size: 17px;
+    display: inline-block;
+    margin: 0 5px;
+  }
+  &:first-child:before {
+    content: '';
+    margin: 0;
+  }
+}
+
+.event-item__count_wrap {
+  text-align: center;
+}
+
+.event-item__count_item {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 20px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.event-item__copy {
+  font-size: 14px;
+  color: #000;
+  margin-top: 10px;
+}
+
+
+.event-table {
+  width: 100%;
+
+  td {
+    padding: 5px 5px;
+    vertical-align: middle;
+  }
+}
+
+.event-cell--number {
+  width: 20%;
+}
+
+.event-cell--info {
+  width: 40%;
+}
+
+.row-number {
+  display: inline-block;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  color: #003628;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cell__content {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: text-top;
+}
+
+.cell__content-details {
+  display: block;
+  font-size: 15px;
+  color: #7deacd;
+}
+
+.event-slider-wrap {
+  padding-bottom: 10px;
+}
+
+.event-slider{
+  position: relative;
+}
+
+
+.event-slider__nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.event-slider__nav-item {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-left: 15px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.event-slider__nav-item--active {
+  background: #fff;
+}
+
+.membership-wrap {
+  background: $color_dark--lighter;
+}
+
+.training {
+  background: $color_dark;
+}
+
+.event-schedule {
+  background: $color_light;
+  color: #fff;
+}
+
+.read-more-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  margin-top: 5px;
+  font-family: $heading_font;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.highlight__content {
+  .media__img {
+    margin-right: 15px;
+
+    img {
+      border-radius: 50%;
+      max-width: 120px ;
+    }
+  }
+}
+
+

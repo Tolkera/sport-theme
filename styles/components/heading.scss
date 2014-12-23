@@ -1,0 +1,30 @@
+.heading--primary,
+.heading--tertiary,
+.heading--secondary,
+.heading--fourth {
+  font-family: $heading_font;
+}
+
+
+.heading--primary {
+  font-size: 30px;
+  color: $color_light;
+
+  @media(max-width: $mobile) {
+    font-size: 24px;
+  }
+}
+
+.heading--secondary {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.heading--tertiary {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.heading--fourth {
+  font-size: 18px;
+}
